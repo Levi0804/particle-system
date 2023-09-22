@@ -155,7 +155,10 @@ class Effect {
 		this.width = width;
 		this.height = height;
 		gradient = this.context.createLinearGradient(0, 0, width, height);
-		gradient.addColorStop(0, 'white');
+		gradient.addColorStop(0, 'red');
+		gradient.addColorStop(0.2, 'blue');
+		gradient.addColorStop(0.4, 'cyan');
+		gradient.addColorStop(0.6, 'orangered');
 		gradient.addColorStop(0.5, 'gold');
 		gradient.addColorStop(1, 'orangered');
 		this.context.fillStyle = gradient;
